@@ -23,7 +23,7 @@ function App() {
             <div>
                 <MainPage/>
             </div>
-            <div className="flex items-center justify-center flex-col">
+            <div className="flex items-center justify-center flex-col mt-32">
                 <div className="">
                     <h2 className="text-4xl font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
             ">Quasar Studio</h2>

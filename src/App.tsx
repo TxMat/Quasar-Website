@@ -4,11 +4,15 @@ import Carousel from "./Caroussel";
 import JobCard from "./JobCard";
 import MainPage from "./MainPage";
 import {Parallax, ParallaxBanner, ParallaxProvider} from "react-scroll-parallax";
+import Navbar from "./navbar";
+import logo from './images/icon.png';
+import gameScreen from './images/screens/1699564370333.jpg';
 
 const game = {
     id: 1,
     name: 'Simple Memory',
-    description: 'Simple Memory is a card    memory game. The goal is to find all pairs of cards in as few moves as possible. You can choose between 3 different difficulties'
+    shortdesc: "Simple Memory is a card memory game.",
+    description: 'The goal is to find all pairs of cards in as few moves as possible. You can choose between 3 different difficulties'
 }
 
 const game_soon = {
@@ -21,8 +25,12 @@ function App() {
     return (<ParallaxProvider>
         <div className="App">
             <div>
+                <Navbar/>
+            </div>
+            <div>
                 <MainPage/>
             </div>
+            <div id="next"/>
             <div className="flex items-center justify-center flex-col mt-32">
                 <div className="">
                     <h2 className="text-4xl font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
@@ -39,9 +47,12 @@ function App() {
             ">Our Games</h2>
                 </div>
                 <div className="grid grid-cols-3 m-auto mt-8">
-                    <GameCard game={game_soon} additionalClasses="filter blur-sm"/>
-                    <GameCard game={game} additionalClasses={undefined}/>
-                    <GameCard game={game_soon} additionalClasses="filter blur-sm"/>
+                    <GameCard game={game} appLogo={logo}
+                              gameScreen={gameScreen} additionalClasses={undefined}/>
+                    <GameCard game={game} appLogo={logo}
+                              gameScreen={gameScreen} additionalClasses={undefined}/>
+                    <GameCard game={game} appLogo={logo}
+                              gameScreen={gameScreen} additionalClasses={undefined}/>
                 </div>
                 <div className={"divider mx-24 my-8"}></div>
                 <h2 className="text-4xl font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
@@ -59,12 +70,12 @@ function App() {
                 </div>
                 <div className={"divider mx-24 my-8"}></div>
                 <div>
-                    <h2 className="text-4xl font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
+                    <h2 className="text-4xl font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl mb-8
             ">Thank You !</h2>
                     <Carousel/>
                 </div>
             </div>
-            <footer className="flex items-center justify-center w-full h-24 border-t border-accent">
+            <footer className="flex items-center justify-center w-full h-24 mt-16 border-t border-accent">
                 <p className="text-xl font-bold">Quasar Studio</p>
             </footer>
 

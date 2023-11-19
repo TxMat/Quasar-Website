@@ -34,9 +34,9 @@ function App() {
             <div className="flex items-center justify-center flex-col mt-32">
                 <div className="">
                     <h2 className="text-4xl font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
-            ">Quasar Studio</h2>
+            ">Quasar Entertainment</h2>
                     <p className="text-xl mt-2 tracking-wide">
-                        Founded in 2023 Quasar Studio is a small studio based in the heart of Europe. We are a small
+                        Founded in 2023 Quasar Entertainment is a small studio based in the heart of Québec. We are a small
                         team of
                         passionate people who love to create android apps.
                     </p>
@@ -76,7 +76,7 @@ function App() {
                 </div>
             </div>
             <footer className="flex items-center justify-center w-full h-24 mt-16 border-t border-accent">
-                <p className="text-xl font-bold">Quasar Studio</p>
+                <p className="text-xl font-bold">Quasar Entertainment</p>
             </footer>
 
 

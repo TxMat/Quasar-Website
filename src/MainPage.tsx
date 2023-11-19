@@ -20,8 +20,8 @@ const MainPage = () => {
         expanded: false,
         children: (
             <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-[200px] font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
-            ">Quasar Studio</h1>
+                <h1 className="text-[150px] font-bold m-auto bg-gradient-to-br from-pink-500 via-purple-600 to-red-900 text-transparent bg-clip-text filter drop-shadow-2xl
+            ">Quasar Entertainment</h1>
             </div>
         ),
     };

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from "react-router-dom";
 
-const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+const Navbar = ({alwaysOn}: {alwaysOn?: boolean}) => {
+  const [showNavbar, setShowNavbar] = useState(alwaysOn || false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -10,6 +11,9 @@ const Navbar = () => {
 
       setShowNavbar(shouldShowNavbar);
     };
+
+    if (alwaysOn) return; // if alwaysOn is true, don't add event listener
+    // is this probably a crime against humanity? yes. does it work? yes.
 
     window.addEventListener('scroll', handleScroll);
 
@@ -27,9 +31,9 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-xl bg-gradient-to-br from-pink-300 via-purple-300 to-red-200 text-transparent bg-clip-text filter drop-shadow-2xl">QSR</div>
         <div className="space-x-4">
-          <a href="#accueil" className="text-white hover:text-gray-300">Home</a>
-          <a href="#services" className="text-white hover:text-gray-300">Privacy Policy</a>
-          <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
+          <a href="/" className="text-white hover:text-gray-300">Home</a>
+          <Link to={"/privacy-policy"} replace={false} target={""} className="text-white hover:text-gray-300">Privacy Policy</Link>
+          <a href="mailto:quasar.entmt@gmail.com" className="text-white hover:text-gray-300">Contact</a>
         </div>
       </div>
     </nav>

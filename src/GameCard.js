@@ -4,7 +4,7 @@ import { FaAndroid } from 'react-icons/fa';
 const GameCard = ({ game, appLogo, gameScreen, additionalClasses }) => {
   return (<div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[1px] m-4 hover:scale-105 transition shadow-xl hover:shadow-2xl">
     <div
-      className={`relative flex flex-col items-center justify-center w-72  p-6 rounded-lg bg-gradient-to-bl from-base-300 to-base-100   ${
+      className={`relative flex flex-col items-center justify-center w-72 p-6 rounded-lg bg-gradient-to-bl from-base-300 to-base-100   ${
         additionalClasses ? ' ' + additionalClasses : ''
       }`}
     >

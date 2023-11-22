@@ -61,13 +61,13 @@ function App() {
             ">Our Team</h2>
                 <div className="grid grid-cols-3 m-auto mt-8">
                     <JobCard name="Doriane André" jobTitle="Designer   "
-                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempor at, aliquam et eros. Sed vitae nisi euismod, ultricies nunc vitae, ultrices nisl. Sed vitae nisi euismod, ultricies nunc vitae, ultrices nisl."
+                             description="Doriane is the main graphic designer of Quasar Entertainment. She was there since the very beginning of the company, and were the first to design the app on figma. She recently graduated from UQAC and flew back to France."
                              imageUrl="https://media.discordapp.net/attachments/1015345909351075861/1175906572338216981/Doriane_AN_65711559.jpg"/>
                     <JobCard name="Ethan Perrod" jobTitle="CEO / Game Developer"
-                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempor at, aliquam et eros. Sed vitae nisi euismod, ultricies nunc vitae, ultrices nisl. Sed vitae nisi euismod, ultricies nunc vitae, ultrices nisl."
+                             description="Ceo of Quasar Entertainment, Ethan is a passionate game developer. He is currently studying at the University of Quebec in Chicoutimi in computer science, Making android apps developpement in Unreal Engine is his passion."
                              imageUrl="https://media.licdn.com/dms/image/C5603AQG0tCNvXXXx8g/profile-displayphoto-shrink_200_200/0/1606229958025?e=1706140800&v=beta&t=ZiP7TVshSJD0Rqdazq5UK8N5RYovRtpTmr2wj0CAQ_0"/>
                     <JobCard name="Mathieu Ponal" jobTitle="Web Developer"
-                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique quis tempor at, aliquam et eros. Sed vitae nisi euismod, ultricies nunc vitae, ultrices nisl. Sed vitae nisi euismod, ultricies nunc vitae, ultrices nisl."
+                             description="Lead web developer, Mathieu is also in the gaming industry. Could talk about rust for hours, he is a passionate gamer and an okay web developer. He joined the team recently to start bluiding the website and backend of Quasar Entertainment."
                              imageUrl="https://media.licdn.com/dms/image/D4E03AQEhj0HHXA8-Ag/profile-displayphoto-shrink_200_200/0/1690213955206?e=1706140800&v=beta&t=xi8N3BgGNbC1OG8sfiF31H63XHp7qc_Y1ZeAGPiP-_A"/>
                 </div>
             </div>
